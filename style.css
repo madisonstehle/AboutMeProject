@@ -3,17 +3,37 @@ body {
 }
 
 h1 {
-    color: rebeccapurple;
+    color: seashell;
     font-size: 40px;
     font-weight: bold;
+    background-color: seashell;
+    background-image: url(greyorange\ background.jpg);
+    border-bottom-style: solid;
+    border-width: 5px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-top: 15px;
+    font-family: 'Muli', sans-serif;
 }
 
 h3 {
     font-size: 20px;
     padding-top: 30px;
+    padding-bottom: 5px;
     font-weight: bold;
+    font-family: 'Muli', sans-serif;
+}
+
+p {
+    font-family: 'Muli', sans-serif;
+}
+
+main {
+    padding-left: 10px;
 }
 
 footer {
     padding-top: 60px;
+    font-style: italic;
+    font-size: 13px;
 }
