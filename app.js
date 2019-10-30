@@ -42,3 +42,27 @@ if (preferredSandwich === 'yes' || preferredSandwich === 'y') {
     console.log('Right');
     //alert('Absolutely! I am actually a vegetarian, so chicken salad is not ideal for me!');
 }
+
+var doLift = prompt('Do I even lift? (or - do I exercise frequently?)');
+console.log(doLift);
+doLift.toLowerCase();
+
+if (doLift === 'yes' || doLift === 'y') {
+    console.log('Wrong');
+    //alert('I wish you were right! I definitely need to exercise more than just walking to my bus stop!');
+} else {
+    console.log('Right');
+    //alert('Yeah, you right. I definitely need to exercise more than just walking to my bus stop!');
+}
+
+var bandGeek = prompt('Am I more of a band geek than a history buff?');
+console.log(bandGeek);
+bandGeek.toLowerCase();
+
+if (bandGeek === 'yes' || bandGeek === 'y') {
+    console.log('Right');
+    //alert('You are correct! I love playing music. My favorite instruments to play are the piano and the marimba. My history knowledge is pretty rusty at best.');
+} else {
+    console.log('Wrong');
+    //alert('Not so much. I love playing music. My favorite instruments to play are the piano and the marimba. My history knowledge is pretty rusty at best.');
+}
