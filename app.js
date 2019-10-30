@@ -3,6 +3,10 @@
 // This line of code was to test that the js was linked to the html
 // console.log('This works!');
 
+var userName = prompt('Hi there! What is your name?');
+console.log('userName: ', userName)
+alert('Thanks for coming to my About Me page, ' + userName + '! Lets do a quiz about me!');
+
 var bornInSeattle = prompt('Was I born and raised in Seattle?');
 console.log(bornInSeattle);
 bornInSeattle = bornInSeattle.toLowerCase();
@@ -25,4 +29,16 @@ if (havePets === 'yes' || havePets === 'y') {
 } else {
     console.log('Wrong');
     //alert('Almost! I have two cats named Friedrich and Jacques.');
+}
+
+var preferredSandwich = prompt('Do I prefer a chicken salad sandwich to a grilled cheese?');
+console.log(preferredSandwich);
+preferredSandwich.toLowerCase();
+
+if (preferredSandwich === 'yes' || preferredSandwich === 'y') {
+    console.log('Wrong');
+    //alert('Nope! I am actually a vegetarian, so chicken salad is not ideal for me!');
+} else {
+    console.log('Right');
+    //alert('Absolutely! I am actually a vegetarian, so chicken salad is not ideal for me!');
 }
