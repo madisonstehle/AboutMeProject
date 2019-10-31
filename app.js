@@ -67,4 +67,4 @@ if (bandGeek === 'yes' || bandGeek === 'y') {
     alert('Not so much. I love playing music. My favorite instruments to play are the piano and the marimba. My history knowledge is pretty rusty at best.');
 }
 
-alert('Thanks for playing, ' + userName + '! You can read on for some more info about me!');
+alert('Thanks for playing, ' + userName + '! You can read on for somle more info about me!');

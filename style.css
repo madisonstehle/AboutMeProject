@@ -24,8 +24,17 @@ h3 {
     font-family: 'Muli', sans-serif;
 }
 
-p {
+p, li {
     font-family: 'Muli', sans-serif;
+}
+
+ol {
+    list-style: decimal;
+    margin-left: 40px;
+}
+
+cite {
+    font-style: italic;
 }
 
 main {
