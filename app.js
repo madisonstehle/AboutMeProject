@@ -67,4 +67,36 @@ if (bandGeek === 'yes' || bandGeek === 'y') {
     alert('Not so much. I love playing music. My favorite instruments to play are the piano and the marimba. My history knowledge is pretty rusty at best.');
 }
 
-alert('Thanks for playing, ' + userName + '! You can read on for somle more info about me!');
+var userDateGuess = prompt('guess a number'); //user guess
+console.log(typeof userDateGuess);
+userDateGuess = parseFloat(userDateGuess);
+console.log(typeof userDateGuess);
+
+var numberGuesses = 0; 
+
+while (numberGuesses !== 3){
+  console.log('Actual Guess: ', userDateGuess);
+  console.log(typeof userDateGuess);
+  if (userDateGuess === 2) {
+    alert('yay, right!');
+    numberGuesses = 3;
+  } else if (userDateGuess > 2){
+    userDateGuess = prompt('too high!');
+    userDateGuess = parseFloat(userDateGuess);
+    numberGuesses++;
+  } else if (userDateGuess < 2) {
+    userDateGuess = prompt('too low!');
+    userDateGuess = parseFloat(userDateGuess);
+    numberGuesses++;
+  } else {
+    userDateGuess = prompt('no. number plz');
+    userDateGuess = parseFloat(userDateGuess);
+    numberGuesses++;
+  }
+  console.log('Guess number: ', numberGuesses);
+}
+
+alert('I was born on the 2nd day of March!');
+
+
+alert('Thanks for playing, ' + userName + '! You can read on for some more info about me!');
