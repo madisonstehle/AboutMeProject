@@ -8,7 +8,7 @@ var userName = prompt('Hi there! What is your name?');
 alert('Thanks for coming to my About Me page, ' + userName + '! Lets do a quiz about me!');
 
 
-
+//Question One
 function questionOne(bornInSeattle){
 
   var bornInSeattle = prompt('Was I born and raised in Seattle?');
@@ -26,7 +26,7 @@ function questionOne(bornInSeattle){
 }
 questionOne();
 
-
+//Question Two
 function questionTwo(havePets) {
 
   var havePets = prompt('Do I have any pets?');
@@ -44,6 +44,7 @@ function questionTwo(havePets) {
 }
 questionTwo();
 
+//Question Three
 function questionThree(preferredSandwich){
 
   var preferredSandwich = prompt('Do I prefer a chicken salad sandwich to a grilled cheese?');
@@ -61,6 +62,7 @@ function questionThree(preferredSandwich){
 }
 questionThree();
 
+//Question Four
 function questionFour(doLift){
 
   var doLift = prompt('Do I even lift? (or - do I exercise frequently?)');
@@ -77,7 +79,8 @@ function questionFour(doLift){
   return doLift;
 }
 questionFour();
-  
+
+//Question Five
 function questionFive(bandGeek){
 
   var bandGeek = prompt('Am I more of a band geek than a history buff?');
@@ -95,7 +98,7 @@ function questionFive(bandGeek){
 }
 questionFive();
 
-
+//Question Six
 function questionSix(userDateGuess){
 
   var userDateGuess = prompt('guess a number'); //user guess
@@ -129,8 +132,31 @@ function questionSix(userDateGuess){
   return userDateGuess;
 }
 questionSix();
-  
+
 alert('I was born on the 2nd day of March!');
+
+//Question Seven
+var bookArray = ['fearless', 'the book thief', 'cloud atlas', 'the tale of despereaux', 'i, robot', 'the left hand of darkness', 'moonlight & vines', 'the hitchhiker\'s guide to the galaxy', 'house of leaves', 'the end of eternity']
+var nameBook = prompt('What is one of my top ten favorite books? You have 6 guesses!').toLowerCase();
+var nameBook = nameBook.toLowerCase();
+var bookGuesses = 6
+
+while(bookGuesses > 0) {
+  for(var i = 0; i < bookArray.length; i++){
+    if(nameBook === bookArray[i]){
+      alert('You got it!');
+      bookGuesses = 0;
+    }
+  }
+  bookGuesses--;
+  if(bookGuesses !== 0 && bookGuesses !== -1){
+    nameBook = prompt('Nope, good guess though! Try again.');
+  } else if (bookGuesses === 0){
+    alert('All the possible correct answers are: Fearless, The Book Thief, Cloud Atlas, The Tale of Despereaux, I Robot, The Left Hand of Darkness, Moonlight & Vines, The Hitchhiker\'s Guide to the Galaxy, House of Leaves, and The End of Eternity');
+  } else if (bookGuesses === -1){
+    alert('Hooray! All the possible correct answers are: Fearless, The Book Thief, Cloud Atlas, The Tale of Despereaux, I Robot, The Left Hand of Darkness, Moonlight & Vines, The Hitchhiker\'s Guide to the Galaxy, House of Leaves, and The End of Eternity');    
+  }
+}
 
 
 alert('Thanks for playing, ' + userName + '! You can read on for some more info about me!');
