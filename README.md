@@ -9,3 +9,6 @@ Also, shoutout to [Google Fonts](https://fonts.google.com/) for the cool font in
 ## JS Acknowledgements
 
 [GoMakeThings](https://gomakethings.com/converting-strings-to-numbers-with-vanilla-javascript/) taught me how to convert a data type from a string to a number in JavaScript
+
+Driver: Daniel
+Navigator: Madison
