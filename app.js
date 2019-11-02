@@ -7,10 +7,10 @@ var userName = prompt('Hi there! What is your name?');
 //console.log('userName: ', userName)
 alert('Thanks for coming to my About Me page, ' + userName + '! Lets do a quiz about me!');
 
+var correctAnswers = 0;
 
 //Question One
 function questionOne(bornInSeattle){
-
   var bornInSeattle = prompt('Was I born and raised in Seattle?');
   //console.log(bornInSeattle);
   bornInSeattle = bornInSeattle.toLowerCase();
@@ -21,6 +21,7 @@ function questionOne(bornInSeattle){
   } else {
     //console.log('Right');
     alert('Bingo, you are right! I was actually born in Louisiana, moved to Missouri and went to college, then picked up and moved to Seattle!');
+    correctAnswers++;
   }
   return bornInSeattle;
 }
@@ -28,7 +29,6 @@ questionOne();
 
 //Question Two
 function questionTwo(havePets) {
-
   var havePets = prompt('Do I have any pets?');
   //console.log(havePets);
   havePets = havePets.toLowerCase();
@@ -36,6 +36,7 @@ function questionTwo(havePets) {
   if (havePets === 'yes' || havePets === 'y') {
     //console.log('Right');
     alert('You got it! I have two cats named Friedrich and Jacques.');
+    correctAnswers++;
   } else {
     //console.log('Wrong');
     alert('Almost! I have two cats named Friedrich and Jacques.');
@@ -46,7 +47,6 @@ questionTwo();
 
 //Question Three
 function questionThree(preferredSandwich){
-
   var preferredSandwich = prompt('Do I prefer a chicken salad sandwich to a grilled cheese?');
   //console.log(preferredSandwich);
   preferredSandwich.toLowerCase();
@@ -57,6 +57,7 @@ function questionThree(preferredSandwich){
   } else {
     //console.log('Right');
     alert('Absolutely! I am actually a vegetarian, so chicken salad is not ideal for me!');
+    correctAnswers++;
   }
   return preferredSandwich;
 }
@@ -64,7 +65,6 @@ questionThree();
 
 //Question Four
 function questionFour(doLift){
-
   var doLift = prompt('Do I even lift? (or - do I exercise frequently?)');
   //console.log(doLift);
   doLift.toLowerCase();
@@ -75,6 +75,7 @@ function questionFour(doLift){
   } else {
     //console.log('Right');
     alert('Yeah, you right. I definitely need to exercise more than just walking to my bus stop!');
+    correctAnswers++;
   }
   return doLift;
 }
@@ -82,7 +83,6 @@ questionFour();
 
 //Question Five
 function questionFive(bandGeek){
-
   var bandGeek = prompt('Am I more of a band geek than a history buff?');
   //console.log(bandGeek);
   bandGeek.toLowerCase();
@@ -90,6 +90,7 @@ function questionFive(bandGeek){
   if (bandGeek === 'yes' || bandGeek === 'y') {
     //console.log('Right');
     alert('You are correct! I love playing music. My favorite instruments to play are the piano and the marimba. My history knowledge is pretty rusty at best.');
+    correctAnswers++;
   } else {
     //console.log('Wrong');
     alert('Not so much. I love playing music. My favorite instruments to play are the piano and the marimba. My history knowledge is pretty rusty at best.');
@@ -100,8 +101,7 @@ questionFive();
 
 //Question Six
 function questionSix(userDateGuess){
-
-  var userDateGuess = prompt('guess a number'); //user guess
+  var userDateGuess = prompt('Guess what day of the month I was born on! You get four chances AND I\'ll give you hint: The number is between 1 and 31!'); //user guess
   console.log(typeof userDateGuess);
   userDateGuess = parseFloat(userDateGuess);
   console.log(typeof userDateGuess);
@@ -112,7 +112,8 @@ function questionSix(userDateGuess){
     console.log('Actual Guess: ', userDateGuess);
     console.log(typeof userDateGuess);
     if (userDateGuess === 2) {
-      alert('yay, right!');
+      alert('Wow! How did you know???');
+      correctAnswers++;
       numberGuesses = 3;
     } else if (userDateGuess > 2){
       userDateGuess = prompt('too high!');
@@ -123,7 +124,7 @@ function questionSix(userDateGuess){
       userDateGuess = parseFloat(userDateGuess);
       numberGuesses++;
     } else {
-      userDateGuess = prompt('no. number plz');
+      userDateGuess = prompt('Plz type a numeral.');
       userDateGuess = parseFloat(userDateGuess);
       numberGuesses++;
     }
@@ -145,6 +146,7 @@ while(bookGuesses > 0) {
   for(var i = 0; i < bookArray.length; i++){
     if(nameBook === bookArray[i]){
       alert('You got it!');
+      correctAnswers++;
       bookGuesses = 0;
     }
   }
@@ -158,5 +160,5 @@ while(bookGuesses > 0) {
   }
 }
 
-
-alert('Thanks for playing, ' + userName + '! You can read on for some more info about me!');
+console.log(correctAnswers);
+alert('Thanks for playing, ' + userName + '! You got ' + correctAnswers + ' questions right! Read on for some more info about me!');
