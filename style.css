@@ -10,7 +10,7 @@ h1 {
     background-image: url(greyorange\ background.jpg);
     border-bottom-style: solid;
     border-width: 5px;
-    padding-left: 10px;
+    padding-left: 25px;
     padding-bottom: 10px;
     padding-top: 15px;
     font-family: 'Muli', sans-serif;
@@ -43,8 +43,43 @@ cite {
     font-style: italic;
 }
 
+img {
+    float: right;
+    position: relative;
+    top: 30px;
+    right: 75px;
+    border: teal double 5px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.offset {
+    float: right;
+    position: relative;
+    top: 50px;
+    right: 100px;
+    border: teal double 5px;
+    padding: 10px;
+}
+
+#bottom_image {
+    float: right;
+    position: relative;
+    margin-bottom: 150px;
+    right: 75px;
+    top: 5px;
+    border: teal double 5px;
+    padding: 10px;
+}
+
+article {
+    width: 600px;
+}
+
 main {
-    padding-left: 10px;
+    margin-left: 25px;
+    padding-left: 25px;
+    border-left: teal double 3px;
 }
 
 footer {
